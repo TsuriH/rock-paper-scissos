@@ -1,0 +1,47 @@
+.Layout {
+    height: 100%;
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    padding: 3em;
+
+}
+
+.Layout .score-container {
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    padding: 1em;
+    margin: 0 auto;
+  
+}
+
+.Layout .points-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 149px;
+    border-radius: 10px;
+    height: 107px;
+
+}
+
+.Layout .score {
+    color: hsl(229, 64%, 46%);
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+
+}
+
+
+.Layout span {
+    color: hsl(229, 25%, 31%);
+    font-size: 3.5em;
+    font-weight: 700;
+    
+}

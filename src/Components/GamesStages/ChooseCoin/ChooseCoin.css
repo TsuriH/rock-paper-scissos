@@ -1,0 +1,49 @@
+
+.ChooseCoin  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:100px;
+  
+}
+
+.ChooseCoin .coin {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgb(230, 218, 218);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+    position: absolute;
+
+}
+
+.ChooseCoin .paper {
+    background-image: url("../../images/icon-paper.svg");
+    border: 20px solid hsl(230, 89%, 65%);
+    box-shadow: -1px 8px 1px -1px hsl(230, 62%, 85%) inset, -1px 8px 1px -1px hsl(230, 55%, 50%);
+    top:250px;
+    left:620px;
+
+}
+
+.ChooseCoin .scissors {
+    background-image: url("../../images/icon-scissors.svg");
+    border: 20px solid hsl(39, 89%, 49%);
+    box-shadow: inset -1px 8px 1px -1px hsl(40, 9%, 79%), -1px 8px 1px -1px hsl(39, 87%, 38%);
+    top:250px;
+    left:880px;
+
+
+}
+
+.ChooseCoin .rock {
+    background-image: url("../../images/icon-rock.svg");
+    border: 20px solid hsl(349, 71%, 52%);
+    box-shadow: -1px 8px 1px hsl(349, 29%, 77%) inset, -1px 8px 1px -1px hsl(349, 55%, 44%);
+    top:450px;
+    left:750px;
+
+
+}
