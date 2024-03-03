@@ -1,12 +1,20 @@
-
-.ChooseCoin  {
+.ChooseCoin {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:100px;
-  
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    background-image: url("../../images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+   
 }
 
+.ChooseCoin .triangle {
+    width: 100%;
+    height: auto;
+}
 .ChooseCoin .coin {
     width: 180px;
     height: 180px;
@@ -15,7 +23,32 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
+}
+
+.ChooseCoin .coins-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    height: 430px;
+    position: relative;
+    
+}
+
+.ChooseCoin .first-row-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ChooseCoin .rock-container {
+    align-self: center;
     position: absolute;
+    bottom: 40px;
+    /* problem I found it difficult to get it closer to the rest of the circles */
+}
+
+.ChooseCoin .coin:hover {
+    transform: scale(1.1);
 
 }
 
@@ -23,8 +56,8 @@
     background-image: url("../../images/icon-paper.svg");
     border: 20px solid hsl(230, 89%, 65%);
     box-shadow: -1px 8px 1px -1px hsl(230, 62%, 85%) inset, -1px 8px 1px -1px hsl(230, 55%, 50%);
-    top:250px;
-    left:620px;
+    /* top: 250px;
+    left: 620px; */
 
 }
 
@@ -32,8 +65,8 @@
     background-image: url("../../images/icon-scissors.svg");
     border: 20px solid hsl(39, 89%, 49%);
     box-shadow: inset -1px 8px 1px -1px hsl(40, 9%, 79%), -1px 8px 1px -1px hsl(39, 87%, 38%);
-    top:250px;
-    left:880px;
+    /* top: 250px;
+    left: 880px; */
 
 
 }
@@ -42,8 +75,8 @@
     background-image: url("../../images/icon-rock.svg");
     border: 20px solid hsl(349, 71%, 52%);
     box-shadow: -1px 8px 1px hsl(349, 29%, 77%) inset, -1px 8px 1px -1px hsl(349, 55%, 44%);
-    top:450px;
-    left:750px;
+    /* top: 450px;
+    left: 750px; */
 
 
 }
