@@ -1,0 +1,144 @@
+.BattelArea {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.BattelArea .coins-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7rem;
+
+
+}
+
+.BattelArea .computer-player {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    transform: scale(1.4);
+}
+
+.BattelArea .user-player {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    transform: scale(1.4);
+}
+
+.BattelArea .user-player-container,
+.BattelArea .computer-player-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    position: relative;
+}
+
+.BattelArea .shadowed-circle {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: scale(1.4);
+    background-color: black;
+    opacity: 0.1;  
+}
+
+.BattelArea .number-count-down {
+
+    position: absolute;
+    top :130px;
+    left: 75px;
+    /* problem is it okay that in order to center the number I went pixel by pixel according to what I see with my eyes or is that wrong and I need to use flex or some */
+    font-size: 120px;
+    font-weight: 700;
+    color: white;
+    position:absolute;
+}
+
+
+
+.BattelArea .result-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 230px
+}
+
+.BattelArea .user-player-container p,
+.BattelArea .computer-player-container .house-pick {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+}
+
+.BattelArea .loading-state-text {
+    margin-bottom: 30px;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.BattelArea .end-game {
+    display: flex;
+
+}
+
+.BattelArea .end-game {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.BattelArea .for-space {
+    visibility: hidden
+}
+
+.BattelArea .end-game-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.BattelArea .end-game-text p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 0.05em;
+    width: 250px;
+    /* ^^ problem why 100% or auto doesn't work here */
+}
+
+.BattelArea .end-game-text button {
+    color: hsl(0, 63%, 50%);
+    text-transform: uppercase;
+    padding: 1em 3em;
+    border-radius: 8px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+
+}
+
+.BattelArea .end-game-text button:hover {
+    cursor: pointer;
+    color: white;
+    background: hsl(0, 63%, 50%);
+
+}
